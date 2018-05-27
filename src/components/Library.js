@@ -9,31 +9,25 @@ class Library extends Component {
         super(props);
         this.state = { albums: albumData};
     }
-    render () {
+    render() {
         return (
-                <main style={{backgroundColor:"red"}} className="collection">
-                
-                <section className="album-covers container clearfix">
-                {
-                this.state.albums.map( (album, index) =>
-                                <div className= "collection-album-container column fourth" key={index}>
-                                    <p>
-                                      <img src={album.albumCover} alt={album.title}/>
-                                        <Link to={`/album/${album.slug}`} >
-                                            <div className="collection-album-info caption"></div>
-                                        </Link>
-                                      <div className="album-name">{album.title}</div>
-                                      <a href="#">{album.artists}</a>
-                                      {album.songs.length} songs
-                                    </p>
-                                </div>
-                                    
-                                      )
-                }
-                </section>
-        </main>
+                <div className="album-covers container clearfix">
+                {this.state.albums.map((album, index) => (
+                                                          <div className="collection-album-container column fourth" key={index}>
+                                                          <img src={album.albumCover} alt={album.title} />
+                                                          <div className="collection-album-info caption">
+                                                          <p>
+                                                          <a href={`/album/${album.slug}`}className="album-name">{album.title}</a>
+                                                          <a href="#">{album.artists}</a>
+                                                          <div>{album.songs.length} songs </div>
+                                                          </p>
+                                                          </div>
+                                                          </div>
+                                                          ))}
+                </div>
                 );
     }
+    
 }
 
 export default Library;
