@@ -1,4 +1,3 @@
-
 *, *::before, *::after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -27,11 +26,6 @@ main.landing {
     z-index: 1;
 }
 
-.navbar .logo {
-    position: relative; /* positioning will be explained in a resource */
-    left: 2rem;
-    cursor: pointer;
-}
 
 .navbar .links-container {
     display: table;
@@ -42,21 +36,7 @@ main.landing {
     color: white;
 }
 
-.links-container .navbar-link {
-    display: table-cell;
-    position: relative;
-    height: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    vertical-align: middle;
-    color: white;
-    font-size: 0.625rem;
-    letter-spacing: 0.05rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 .links-container .navbar-link:hover {
     color: rgb(233,50,117);

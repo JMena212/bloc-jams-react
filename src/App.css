@@ -1,4 +1,36 @@
+.navbar {
+    padding: 0.5rem;
+    background-color: rgb(101,18,95);
+    z-index: 1;
+}
 
+.navbar .logo {
+    position: relative; /* positioning will be explained in a resource */
+    left: 2rem;
+}
 
+.links-container {
+    display: table;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    color: white;
+}
 
+.links-container .navbar-link {
+    display: table-cell;
+    position: relative;
+    height: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    vertical-align: middle;
+    color: white;
+    font-size: 0.625rem;
+    letter-spacing: 0.05rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+}
 

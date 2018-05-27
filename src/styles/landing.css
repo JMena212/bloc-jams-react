@@ -3,15 +3,7 @@
 }
 
 
-.navbar {
-    padding: 0.5rem;
-    background-color: rgb(101,18,95);
-}
 
-.navbar .logo {
-    position: relative; /* positioning will be explained in a resource */
-    left: 2rem;
-}
 .hero-content {
     position: relative; /* positioning will be explained in a resource */
     min-height: 600px;  /* hero content element must be _at least_ 600 pixels */
@@ -37,7 +29,7 @@
     
 }
 
-.point-title {
+.hero-title {
     color: white;
 }
 

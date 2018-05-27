@@ -5,6 +5,7 @@ import '.././styles/normalize.css';
 
 
 
+
 const Landing = () => (
                        <section className="landing">
                        <h1 className="hero-title">Turn the music up!</h1>
