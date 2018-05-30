@@ -125,7 +125,7 @@ class Album extends Component {
                 <main className= "album-view container narrow">
                 <section className="clearfix">
                     <div className="column half">
-                        <img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
+                        <img className="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
                     </div>
                     <div className="album-view-details column half">
                           <h1 className="album-view-title">{this.state.album.title}</h1>
