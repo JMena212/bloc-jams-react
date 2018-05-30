@@ -14,6 +14,7 @@ class Library extends Component {
                 <div className="album-covers container clearfix">
                 {this.state.albums.map((album, index) => (
                                                           <div className="collection-album-container column fourth" key={index}>
+                                                        
                                                           <img src={album.albumCover} alt={album.title} />
                                                           <div className="collection-album-info caption">
                                                           <p>
