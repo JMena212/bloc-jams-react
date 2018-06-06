@@ -47,9 +47,9 @@
     position: relative;
 }
 
-.song-name,
-/*.player-bar .currently-playing .artist-name,*/
-/*.player-bar .currently-playing .artist-song-mobile*/ {
+.player-bar .currently-playing .song-name,
+.player-bar .currently-playing .artist-name,
+.player-bar .currently-playing .artist-song-mobile {
     text-align: center;
     font-size: 0.75rem;
     margin: 0;
@@ -84,7 +84,7 @@
     top: 0.5rem;
 }
 
-.seek-control .total-time {
+seek-control .total-time {
     position: absolute;
     right: 0;
     top: 0.5rem;
@@ -112,7 +112,6 @@
     background-color: white;
     left: 36%;
     top: 50%;
-    /* #1 */
     margin-left: -0.25rem;
     margin-top: -0.25rem;
     border-radius: 50%;
@@ -132,18 +131,18 @@
     margin-left: -0.5rem;
 }
 
-.player-bar .volume {
-    width: 25%;
+.player-bar .volume-control {
+    width: 15%;
     text-align: right;
 }
 
-.player-bar .volume .icon {
+.player-bar .volume-control .icon {
     font-size: 1.1rem;
     display: inline-block;
     vertical-align: middle;
 }
 
-.player-bar .volume .seek-bar {
+.player-bar .volume-control .seek-bar {
     display: inline-block;
     width: 5.75rem;
     vertical-align: middle;
@@ -157,7 +156,7 @@
     
     .player-bar .main-controls,
     .player-bar .currently-playing,
-    .player-bar .volume {
+    .player-bar .volume-control {
         display: block;
         margin: 0 auto;
         padding: 0;
@@ -166,7 +165,7 @@
     }
     
     .player-bar .main-controls,
-    .player-bar .volume {
+    .player-bar .volume-control {
         min-height: 3.5rem;
     }
     

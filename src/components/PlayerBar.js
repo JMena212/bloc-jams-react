@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import Album from './Album';
 import albumData from './../data/albums';
+import '.././styles/normalize.css';
+import '.././styles/main.css';
+import '.././styles/album.css';
 
 
 
@@ -25,7 +28,7 @@ class PlayerBar extends Component {
          <div className="control-group currently-playing">
                 <h2 className="song-name">SONG</h2>
                 <h3 className="artist-name">ARTIST</h3>
-                <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
+            <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
                 <input
                 type="range"
                 className="seek-bar"
@@ -35,11 +38,12 @@ class PlayerBar extends Component {
                 step="0.01"
                 onChange={this.props.handleTimeChange}
                 />
-                <div className="total-time">{this.props.formatTime(this.props.duration)}</div></div>
+                <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
+             </div>
          </div>
                 
          <div className="volume-control">
-                <div className="icon ion-volume-low"></div>
+                <span className="icon ion-volume-low"></span>
                 <input
                 type="range"
                 className="seek-bar"
@@ -49,7 +53,7 @@ class PlayerBar extends Component {
                 step="0.01"
                 onChange={this.props.handleVolumeChange}
                 />
-                <div className="icon ion-volume-high"></div>
+                <span className="icon ion-volume-high"></span>
           </div>
         </div>
     </section>
