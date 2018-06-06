@@ -84,7 +84,7 @@
     top: 0.5rem;
 }
 
-seek-control .total-time {
+.seek-control .total-time {
     position: absolute;
     right: 0;
     top: 0.5rem;
@@ -153,7 +153,7 @@ seek-control .total-time {
         padding: 1rem;
         background-color: rgba(0,0,0,0.6);
     }
-    
+
     .player-bar .main-controls,
     .player-bar .currently-playing,
     .player-bar .volume-control {
@@ -163,21 +163,21 @@ seek-control .total-time {
         width: 100%;
         text-align: center;
     }
-    
+
     .player-bar .main-controls,
     .player-bar .volume-control {
         min-height: 3.5rem;
     }
-    
+
     .player-bar .currently-playing {
         min-height: 2.5rem;
     }
-    
+
     .player-bar .artist-name,
     .player-bar .song-name {
         display: none;
     }
-    
+
     .player-bar .currently-playing .artist-song-mobile {
         display: block;
     }

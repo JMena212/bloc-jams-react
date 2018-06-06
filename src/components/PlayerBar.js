@@ -23,10 +23,10 @@ class PlayerBar extends Component {
                     <span className="ion-skip-forward"></span>
                  </button>
                 </div>
-          
-                
+
+
          <div className="control-group currently-playing">
-                <h2 className="song-name">SONG</h2>
+         <h2 className="song-name">{this.props.currentSong.title}</h2>
                 <h3 className="artist-name">ARTIST</h3>
             <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
                 <input
@@ -41,8 +41,8 @@ class PlayerBar extends Component {
                 <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
              </div>
          </div>
-                
-         <div className="volume-control">
+
+         <div className="control-group volume-control">
                 <span className="icon ion-volume-low"></span>
                 <input
                 type="range"
@@ -57,7 +57,7 @@ class PlayerBar extends Component {
           </div>
         </div>
     </section>
-               
+
         );
     }
 }
