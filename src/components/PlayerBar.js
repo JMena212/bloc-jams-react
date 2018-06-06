@@ -27,7 +27,7 @@ class PlayerBar extends Component {
 
          <div className="control-group currently-playing">
          <h2 className="song-name">{this.props.currentSong.title}</h2>
-                <h3 className="artist-name">ARTIST</h3>
+                <h3 className="artist-name">{this.props.artist}</h3>
             <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
                 <input
                 type="range"
