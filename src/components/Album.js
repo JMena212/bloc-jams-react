@@ -4,7 +4,6 @@ import PlayerBar from './PlayerBar';
 import '.././styles/normalize.css';
 import '.././styles/main.css';
 import '.././styles/album.css';
-import '.././styles/album.css';
 import '.././styles/player_bar.css';
 
 class Album extends Component {

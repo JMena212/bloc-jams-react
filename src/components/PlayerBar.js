@@ -8,7 +8,7 @@ class PlayerBar extends Component {
     render() {
         return (
     <section className="player-bar">
-            <div className="container">
+      <div className="container">
                 <div className="control-group main-controls">
                  <button className="previous" onClick={this.props.handlePrevClick}>
                     <span className="ion-skip-backward"></span>
@@ -20,11 +20,11 @@ class PlayerBar extends Component {
                     <span className="ion-skip-forward"></span>
                  </button>
                 </div>
-             </div>
+          
                 
          <div className="control-group currently-playing">
-                <h2 className="song-name">BLUE</h2>
-                <h3 className="artist-name">PABLO</h3>
+                <h2 className="song-name">SONG</h2>
+                <h3 className="artist-name">ARTIST</h3>
                 <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
                 <input
                 type="range"
@@ -38,7 +38,7 @@ class PlayerBar extends Component {
                 <div className="total-time">{this.props.formatTime(this.props.duration)}</div></div>
          </div>
                 
-         <section id="volume-control">
+         <div className="volume-control">
                 <div className="icon ion-volume-low"></div>
                 <input
                 type="range"
@@ -50,8 +50,9 @@ class PlayerBar extends Component {
                 onChange={this.props.handleVolumeChange}
                 />
                 <div className="icon ion-volume-high"></div>
-          </section>
-                </section>
+          </div>
+        </div>
+    </section>
                
         );
     }

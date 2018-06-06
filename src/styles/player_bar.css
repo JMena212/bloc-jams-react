@@ -47,9 +47,9 @@
     position: relative;
 }
 
-.player-bar .currently-playing .song-name,
-.player-bar .currently-playing .artist-name,
-.player-bar .currently-playing .artist-song-mobile {
+.song-name,
+/*.player-bar .currently-playing .artist-name,*/
+/*.player-bar .currently-playing .artist-song-mobile*/ {
     text-align: center;
     font-size: 0.75rem;
     margin: 0;
