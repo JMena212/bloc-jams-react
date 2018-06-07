@@ -25,13 +25,16 @@ class PlayerBar extends Component {
                 </div>
 
 
-         <div className="control-group currently-playing">
-         <h2 className="song-name">{this.props.currentSong.title}</h2>
+                <div className="control-group currently-playing">
+                <h2 className="song-name">{this.props.currentSong.title}</h2>
                 <h3 className="artist-name">{this.props.artist}</h3>
-            <div className="seek-control">{this.props.formatTime(this.props.currentTime)}
+            <div className="seek-control">
+
+              <div className= "current-time">{this.props.formatTime(this.props.currentTime)}</div>
+              <div className="seek-bar">
                 <input
                 type="range"
-                className="seek-bar"
+                className= "seek-bar"
                 value={(this.props.currentTime / this.props.duration) || 0}
                 max="1"
                 min="0"
@@ -39,7 +42,8 @@ class PlayerBar extends Component {
                 onChange={this.props.handleTimeChange}
                 />
                 <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
-             </div>
+                </div>
+                </div>
          </div>
 
          <div className="control-group volume-control">
@@ -55,7 +59,7 @@ class PlayerBar extends Component {
                 />
                 <span className="icon ion-volume-high"></span>
           </div>
-        </div>
+          </div>
     </section>
 
         );
