@@ -121,7 +121,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -10px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: red;
+  background: pink;
 }
 input[type=range]::-moz-range-track {
   width: 50%;
@@ -129,7 +129,7 @@ input[type=range]::-moz-range-track {
   cursor: pointer;
   animate: 0.2s;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
-  background-color: red;
+  background-color: pink;
   border-radius: 1.3px;
   border: 0.2px solid #010101;
 }
@@ -139,7 +139,7 @@ input[type=range]::-moz-range-thumb {
   height: 16px;
   width: 16px;
   border-radius: 3px;
-  background-color: red;
+  background-color: pink;
   cursor: pointer;
 }
 input[type=range]::-ms-track {
@@ -153,13 +153,13 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background-color: red;
+  background-color: pink;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  background-color: red;
+  background-color: pink;
   border: 0.2px solid #010101;
   border-radius: 2.6px;
   box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
@@ -170,14 +170,14 @@ input[type=range]::-ms-thumb {
   height: 16px;
   width: 16px;
   border-radius: 3px;
-  background-color: #red;
+  background-color: pink;
   cursor: pointer;
 }
 input[type=range]:focus::-ms-fill-lower {
-  background-color: red;
+  background-color: pink;
 }
 input[type=range]:focus::-ms-fill-upper {
-  background-color: red;
+  background-color: pink;
 
 }
 
